@@ -1,12 +1,24 @@
 header {
-  padding: 156px 0 100px;
+  padding: 100px 0 100px;
+  
 }
 
 section {
-  padding: 150px 0;
+  padding: 75px 0;
 }
 
-.testing {
+.pink {
   background-color: #FFB6C1;
-  color: #FFB6C1;
+}
+
+.lavender {
+  background-color: lavender;
+}
+
+.light-purple {
+  background-color: mediumpurple;
+}
+
+.peach {
+  background-color: peachpuff;
 }
