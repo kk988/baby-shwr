@@ -53,12 +53,32 @@ section {
     font-weight: bold;
 }
 
+.thicker {
+    font-weight: 900;
+}
+
 .italic {
     font-style: italic;
+}
+
+.section-title {
+    margin-left: 50px;
+}
+
+.larger-15 {
+    font-size: 1.15em;
+}
+
+.larger-25 {
+    font-size: 1.25em;
 }
 
 @media only screen and (max-width: 560px) {
     header h1 {
         font-size: 36px;
+    }
+    
+    .section-title {
+        margin-left: 5px;
     }
 }
