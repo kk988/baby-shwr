@@ -1,11 +1,18 @@
 body {
-    position: relative;
-    top: 56px;
+  position: relative;
+  top: 56px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
   padding: 100px 0 100px;
-  
+  background-image: url("https://www.pinclipart.com/picdir/big/86-860533_corujinha-lilas-05-imagens-png-pink-orange-baby.png");
+  min-height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section {
@@ -27,3 +34,8 @@ section {
 .peach {
   background-color: peachpuff;
 }
+
+.font-cursive {
+  font-family: 'Playfair Display', serif;
+}
+
