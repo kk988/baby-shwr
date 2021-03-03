@@ -14,7 +14,14 @@ header, footer {
   background-position: center 150px;
   background-repeat: no-repeat;
   background-size: auto 400px;
-  background-position: center 150px;
+}
+
+header {
+      background-position: center 150px;
+}
+
+footer {
+      background-position: center bottom 60px;   
 }
 
 header h1, footer h1 {
