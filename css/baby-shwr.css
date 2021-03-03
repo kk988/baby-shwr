@@ -4,7 +4,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-header {
+header, footer {
   /*padding: 100px 0 100px;*/
   position: relative;
   background-image: url('../static/purple-owl.png');
@@ -16,13 +16,29 @@ header {
   background-size: auto 400px;
 }
 
-header h1 {
-  position: relative;
+header {
+      background-position: center 150px;
+}
+
+footer {
+      background-position: center 100px;   
+}
+
+header h1, footer h1 {
   width: 100%;
-  top: 0px;
   font-size: 48px;
   color: lavender;
   text-align:center;
+}
+
+header h1 {
+    position: relative;
+    top: 0px;
+}
+
+footer h1 {
+    position: absolute;
+    bottom: 0;
 }
 
 section {
@@ -30,7 +46,7 @@ section {
 }
 
 .pink {
-  background-color: #FFB6C1;
+  background-color: #ffcad6;
 }
 
 .lavender {
@@ -61,10 +77,6 @@ section {
     font-style: italic;
 }
 
-.section-title {
-    margin-left: 50px;
-}
-
 .larger-15 {
     font-size: 1.15em;
 }
@@ -73,12 +85,38 @@ section {
     font-size: 1.25em;
 }
 
+.smaller-15 {
+    font-size: 0.85em;
+}
+
+.smaller-25 {
+    font-size: 0.75em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+#target-img {
+    content: url('../static/target_logo480x623.png');
+    width: 200px;
+}
+
+#bbb-img {
+    content: url('../static/Buy_Buy_Baby_Logo.png');
+    width: 200px;
+}
+
 @media only screen and (max-width: 650px) {
-    header h1 {
+    header h1, footer h1 {
         font-size: 36px;
-    }
-    
-    .section-title {
-        margin-left: 5px;
     }
 }
