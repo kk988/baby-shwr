@@ -236,4 +236,39 @@ form#rsvp-form input.rsvp-btn {
     header h1, footer h1 {
         font-size: 36px;
     }
+    
+    /****** FORM STYLES ********/
+
+    form#message-form, form#rsvp-form {
+        width: 400px;
+        padding: 20px;
+        padding-top: 40px;
+    }
+    
+    form textarea {
+        width: 350px;
+        height: 200px;
+    }
+    
+    form input, form textarea {
+        margin-bottom: 20px;
+        font-size: 16px;        
+    }
+    
+    .form-check-input {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    
+    form input.form-name, form input.form-email {
+        width: 350px;
+    }
+    
+    form#message-form input.msg-btn {
+        width: 150px;
+    }
+    
+    form#rsvp-form input.rsvp-btn {
+        width: 150px;
+    }
 }
