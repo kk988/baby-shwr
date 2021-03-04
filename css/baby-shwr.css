@@ -4,10 +4,22 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-header, footer {
+header {
   /*padding: 100px 0 100px;*/
   position: relative;
   background-image: url('../static/purple-owl.png');
+  height: 500px;
+
+  background-attachment: fixed;
+  background-position: center 150px;
+  background-repeat: no-repeat;
+  background-size: auto 400px;
+}
+
+footer {
+  /*padding: 100px 0 100px;*/
+  position: relative;
+  background-image: url('../static/pink-owl.png');
   height: 500px;
 
   background-attachment: fixed;
