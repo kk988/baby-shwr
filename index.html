@@ -15,6 +15,22 @@
   <!-- Custom styles for this template -->
   <link href="css/baby-shwr.css" rel="stylesheet">
 
+  <script src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript">var rsvp-submitted=false;</script>
+  <script type="text/javascript">var contact-submitted=false;</script>
+  <script type="text/javascript">
+  $('#rsvp-form').on('submit', function(e) {
+    $('#rsvp-form *').fadeOut(2000);
+    $('#rsvp-form').prepend('Your submission has been processed...');
+    });
+  </script>
+  <script type="text/javascript">
+  $('#message-form').on('submit', function(e) {
+    $('#message-form *').fadeOut(2000);
+    $('#message-form').prepend('Your submission has been processed...');
+    });
+  </script>
+    
     <title>Smartest Baby (Knock on wood!)</title>
   </head>
   <body id="page-top">
@@ -119,32 +135,34 @@
         </section>
       <section id="rsvp" class="bg-light">
         <div class="flex-v-center">
-        <form id="message-form" name="message-form" method="post" class="text-center">
+        <form id="rsvp-form" name="rsvp-form" method="post" class="text-center" action="https://docs.google.com/forms/d/e/1FAIpQLSe8qTwn7tc8rs6gTCKpeNX75gDt7lp7b4_RXPKcphuUezl8ow/formResponse?" target="hidden_iframe" onsubmit="rsvp-submitted=true;">
           <h1>RSVP Here</h1>
           <h5 class="italic">If you have already RSVP'd via mail,<br />no need to fill this out :)</h5>
-          <input id="name" class="form-name" name="name" type="text" placeholder="Name(s)" /><br />
-          <input id="email" class="form-email" name="email" type="email" placeholder="Email" /><br />
+          <input id="entry.2145218484" class="form-name" name="entry.2145218484" type="text" placeholder="Name(s)" /><br />
+          <input id="entry.1371319844" class="form-email" name="entry.1371319844" type="email" placeholder="Email" /><br />
           <h4 class="flex-v-left bold">Will you be attending?</h4>
           <div class="flex-v-left">
-            <input class="form-check-input" type="radio" name="rsvpRadioGoing" id="rsvpRadioGoing" checked>
-            <label class="form-check-label" for="rsvpRadioGoing">Wouldn't miss it!</label><br />
+            <input class="form-check-input" type="radio" name="entry.1869560708" id="entry.1869560708" value="Yes" checked>
+            <label class="form-check-label" for="entry.1869560708">Wouldn't miss it!</label><br />
           </div>
           <div class="flex-v-left">
-            <input class="form-check-input" type="radio" name="rsvpRadioNotGoing" id="rsvpRadioNotGoing">
-            <label class="form-check-label" for="rsvpRadioNotGoing">Unfortunately will not be attending :(</label><br />
+            <input class="form-check-input" type="radio" name="entry.1869560708" id="entry.1869560708" value="No">
+            <label class="form-check-label" for="entry.1869560708">Unfortunately won't make it :'(</label><br />
           </div>
           <input id="submit" name="submit" type="submit" value="Submit" class="rsvp-btn"/>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(rsvp-submitted) {}"></iframe>
         </form>
         </div>
       </section>
       <section id="contact" class="lavender">
        <div class="flex-v-center">
-        <form id="message-form" name="message-form" method="post" class="text-center">
+        <form id="message-form" name="message-form" method="post" class="text-center" action="https://docs.google.com/forms/d/e/1FAIpQLSf5TQqcqPQn5WThoQrVMA_GjbL4kBTajDLRI5Gl4la9bDCtrA/formResponse?" target="hidden_iframe2" onsubmit="contact-submitted=true;">
             <h2 class="italic">Contact Us</h2>
-            <input id="name" class="form-name" name="name" type="text" placeholder="Name" /><br />
-            <input id="email" class="form-email" name="email" type="email" placeholder="Email" /><br />
-            <textarea id="message" rows="4" cols="30" name="message">Message</textarea><br />
+            <input id="entry.1200875448" class="form-name" name="entry.1200875448" type="text" placeholder="Name" /><br />
+            <input id="entry.503892423" class="form-email" name="entry.503892423" type="email" placeholder="Email" /><br />
+            <textarea id="entry.987260373" rows="4" cols="30" name="entry.987260373">Message</textarea><br />
             <input id="submit" name="submit" type="submit" value="Submit" class="msg-btn"/>
+          <iframe name="hidden_iframe2" id="hidden_iframe2" style="display:none;" onload="if(contact-submitted) {}"></iframe>
         </form>
         </div>
       </section>

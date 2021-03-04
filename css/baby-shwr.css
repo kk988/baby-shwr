@@ -142,24 +142,24 @@ section {
 
 /****** FORM STYLES ********/
 
-form#message-form {
+form#message-form, form#rsvp-form {
     background-color: white;
     width: 550px;
     padding: 20px;
     padding-top: 40px;
 }
 
-form#message-form h2{
+form h2 {
     margin-bottom: 20px;
 }
 
-form#message-form textarea {
+form textarea {
     width: 500px;
     height: 200px;
     resize: none;
 }
 
-form#message-form input, form#message-form textarea {
+form input, form textarea {
     margin-bottom: 20px;
     font-size: 16px;
     padding: 20px;
@@ -183,7 +183,7 @@ form#message-form input, form#message-form textarea {
   padding: 20px
 }
 
-form#message-form input.form-name, form#message-form input.form-email {
+form input.form-name, form input.form-email {
     width: 500px;
 }
 
@@ -195,7 +195,7 @@ form#message-form input.msg-btn {
     top: -40px;
 }
 
-form#message-form input.rsvp-btn {
+form#rsvp-form input.rsvp-btn {
     position: relative;
     width: 250px;
     background-color: white;
