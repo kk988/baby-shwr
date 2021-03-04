@@ -87,11 +87,11 @@
 		        
 		          <p class="larger-25">Dmitry and Krista are registered at the following locations:</p>
 		          <p>
-		          <a href="https://www.target.com/gift-registry/giftgiver?registryId=2b11fedab7364d4ab2a10ad8a45c5cd1&type=BABY">
+		          <a href="https://www.target.com/gift-registry/giftgiver?registryId=2b11fedab7364d4ab2a10ad8a45c5cd1&type=BABY" target="_blank">
 		            <img id="target-img" class="bg-white"></a>
 		          <br />
 		          <br />
-		          <a href="https://www.buybuybaby.com/store/giftregistry/viewregistryguest/549955055">
+		          <a href="https://www.buybuybaby.com/store/giftregistry/viewregistryguest/549955055" target="_blank">
 		            <img id="bbb-img" class="bg-white"></a>
 		          </p>
 		          <p class="larger-15">Send all gifts to:</p>
@@ -121,12 +121,15 @@
       </section>
       <section id="contact" class="lavender">
        <h4>I have questions</h4>
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
+       <div class="flex-v-center">
+        <form id="message-form" name="message-form" method="post" class="text-center">
+            <h2 class="italic">Contact Us</h2>
+            <input id="name" name="name" type="text" placeholder="Name" /><br />
+            <input id="email" name="email" type="email" placeholder="Email" /><br />
+            <textarea id="message" rows="4" cols="30" name="message">Message</textarea><br />
+            <input id="submit" name="submit" type="submit" value="Submit" class="msg-btn"/>
+        </form>
+        </div>
       </section>
       <footer class="light-purple">
         <h1 class="font-cursive">Can't wait to see you there!</h1>
