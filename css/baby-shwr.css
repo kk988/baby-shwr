@@ -7,7 +7,7 @@ body {
 header {
   /*padding: 100px 0 100px;*/
   position: relative;
-  background-image: url('../static/purple-owl.png');
+  background-image: url('../static/purple-owl-transparent.png');
   height: 500px;
 
   background-attachment: fixed;
@@ -19,7 +19,7 @@ header {
 footer {
   /*padding: 100px 0 100px;*/
   position: relative;
-  background-image: url('../static/pink-owl.png');
+  background-image: url('../static/pink-owl-transparent.png');
   height: 500px;
 
   background-attachment: fixed;
