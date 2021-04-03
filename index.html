@@ -15,23 +15,12 @@
   <!-- Custom styles for this template -->
   <link href="css/baby-shwr5.css" rel="stylesheet">
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   
   <script type="text/javascript">var rsvp_submitted=false;</script>
   <script type="text/javascript">var contact_submitted=false;</script>
-  <script type="text/javascript">
-  $('#rsvp-form').on('submit', function(e) {
-    $('#rsvp-form *').fadeOut(2000);
-    $('#rsvp-form').prepend('Your submission has been processed...');
-    });
-  </script>
-  <script type="text/javascript">
-  $('#message-form').on('submit', function(e) {
-    $('#message-form *').fadeOut(2000);
-    $('#message-form').prepend('Your submission has been processed...');
-    });
-  </script>
+  
     
     <title>Smartest Baby (Knock on wood!)</title>
     <link rel="shortcut icon" type="image/jpg" href="static/purple-owl-icon.ico"/>
@@ -378,8 +367,9 @@
             <label class="form-check-label" for="entry.1869560708">Unfortunately won't make it :'(</label><br />
           </div>
           <input id="submit" name="submit" type="submit" value="Submit" class="rsvp-btn"/>
-          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(rsvp_submitted) {}"></iframe>
+          
         </form>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(rsvp_submitted) {}"></iframe>
         </div>
       </section>
       <section id="contact" class="lavender">
@@ -391,8 +381,8 @@
             <input id="entry.503892423" class="form-email" name="entry.503892423" type="email" placeholder="Email" /><br />
             <textarea id="entry.987260373" rows="4" cols="30" name="entry.987260373">Message</textarea><br />
             <input id="submit" name="submit" type="submit" value="Submit" class="msg-btn"/>
-          <iframe name="hidden_iframe2" id="hidden_iframe2" style="display:none;" onload="if(contact_submitted) {}"></iframe>
         </form>
+        <iframe name="hidden_iframe2" id="hidden_iframe2" style="display:none;" onload="if(contact_submitted) {}"></iframe>
         </div>
       </section>
       <footer class="light-purple">
@@ -400,5 +390,17 @@
       </footer>
 
     </div>
+    <script type="text/javascript">
+  $('#rsvp-form').on('submit', function(e) {
+    $('#rsvp-form *').fadeOut(2000);
+    $('#rsvp-form').prepend('Your submission has been processed...');
+    });
+  </script>
+  <script type="text/javascript">
+  $('#message-form').on('submit', function(e) {
+    $('#message-form *').fadeOut(2000);
+    $('#message-form').prepend('Your submission has been processed...');
+    });
+  </script>
   </body>
 </html>
