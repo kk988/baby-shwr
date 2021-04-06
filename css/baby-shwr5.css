@@ -140,6 +140,11 @@ section {
     width: 200px;
 }
 
+#prop-owl {
+    content: url('../static/prop-owl.png');
+    width: 200px;
+}
+
 #bbb-img {
     content: url('../static/Buy_Buy_Baby_Logo.png');
     width: 200px;
